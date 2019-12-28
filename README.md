@@ -3,9 +3,8 @@
 学号:18062041
 #### 简述
 此次作业的主要内容是对github上的开源代码nebula进行单元测试，并用git提交到github上。
-## 过程描述
 #### git的安装
-git的安装非常简单，只需要输入
+git的安装非常简单，只需要一行命令即可安装
 ```
 sudo apt install git 
 ```
@@ -15,9 +14,9 @@ sudo apt install git
 用git创建远程连接需要在github里创建秘匙
 ##### 第一步
 ```
-ssh-keygen -t rsa -C "2636896962@qq.com"
+ssh-keygen -t rsa -C "993526915@qq.com"
 ```
-使用ssh创建秘匙  
+使用ssh创建秘匙
 ##### 第二步
 ```
 cd  ~/.ssh
@@ -28,25 +27,25 @@ cd  ~/.ssh
 more id_rsa.pub
 ```
 在id_rsa.pub文件中找到秘匙
-
+![](2.png)
 ##### 第四步
 将所有秘匙复制，并进入github，在左上角进入Settings-->SSH and GPG keys --> new ssh key 
-
+![](3.png)
 将秘匙粘贴到Key中并保存
-
+![](1.png)
 完成后会显示如下界面
 最后，在终端输入
 ```
 ssh -T git@github.com
 ```
-
-这是远程访问github命令
+![](4.png)
+这是远程访问github命令，若显示如图，则git成功连接github
 #### nebula安装与启动
 安装完git后就能用git从github上克隆代码到本地了
 ##### 第一步
 进入nebula创建者的主页，fork到自己的主页下
 ```
-git clone https://github.com/2636896962/nebula.git
+git clone https://github.com/993526915/nebula.git
 ```
 将代码拷贝到本地
 ##### 第二步
@@ -88,15 +87,6 @@ bash> cp etc/nebula-metad.conf.default etc/nebula-metad.conf
 bash> cp etc/nebula-storaged.conf.default etc/nebula-storaged.conf
 ```
 这就配置完成了nebula
-
-##### 启动nebula
-```
-bash> ./scripts/nebula.service start all
-bash> ./bin/nebula -u user -p password --port 3699 --addr "127.0.0.1"
-```
-这两行命令用于启动nebula
-启动完成
-
 ##### nebula使用
 可以使用命令行来完成
 创建tag edges和spaces等进行数据的储存与筛选
