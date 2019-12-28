@@ -28,19 +28,19 @@ cd  ~/.ssh
 more id_rsa.pub
 ```
 在id_rsa.pub文件中找到秘匙
-![](2.png)
+
 ##### 第四步
 将所有秘匙复制，并进入github，在左上角进入Settings-->SSH and GPG keys --> new ssh key 
-![](3.png)
+
 将秘匙粘贴到Key中并保存
-![](1.png)
+
 完成后会显示如下界面
 最后，在终端输入
 ```
 ssh -T git@github.com
 ```
-![](4.png)
-这是远程访问github命令，若显示如图，则git成功连接github
+
+这是远程访问github命令
 #### nebula安装与启动
 安装完git后就能用git从github上克隆代码到本地了
 ##### 第一步
@@ -95,9 +95,7 @@ bash> ./scripts/nebula.service start all
 bash> ./bin/nebula -u user -p password --port 3699 --addr "127.0.0.1"
 ```
 这两行命令用于启动nebula
-当显示如图
-![](5.png)
-表示启动完成
+启动完成
 
 ##### nebula使用
 可以使用命令行来完成
