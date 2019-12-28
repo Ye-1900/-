@@ -195,6 +195,10 @@ int main(int argc, char** argv) {
 
 这是编译结果并且从结果可以看出实验结果确实如同预料，slowNowIn比MicroSec()的速度比fastNowInMicroSec()的速度慢，但精确程度要高
 ![](7.png)
-编译结果得到验证，单元测试成功。
+编译结果得到验证，单元测试成功。  
+### 实验心得
+
+本次大作业，我了解了git的使用，同时更全面认识了github，懂得了如何用git提交代码，以及如何用github的commit与源代码作者进行交流，还懂得了如何cmake编译代码以及如何直接调用make完的代码。
+
 
 
